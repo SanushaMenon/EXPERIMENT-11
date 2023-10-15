@@ -1,0 +1,30 @@
+//PRN: 22070123099
+//EXP.11
+//NAME:SANUSHA MENON
+
+#include<iostream>
+using namespace std;
+
+class Cube {
+    public:
+    float calculate(float a, float b, float c){
+        float vol=a*b*c;
+        return vol;
+    }
+    float display(float a){
+        cout<<"Volume of cuboid = "<<a;
+    }
+};
+
+int main() {
+    Cube c1;
+    float h, b, l;
+    cout<<"Enter length, breadth and height: ";
+    cin>>l>>b>>h;
+    float vol=c1.calculate(l,b,h);
+    c1.display(vol);
+}
+/*/OUTPUT:
+Enter length, breadth and height: 2 3 4
+Volume of cuboid = 24
+/*/
